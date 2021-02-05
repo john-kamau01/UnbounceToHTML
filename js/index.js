@@ -1,0 +1,1 @@
+var $window=$(window),$videoWrap=$(".video-wrap"),$video=$(".video"),videoHeight=$video.outerHeight();$window.on("scroll",function(){$window.scrollTop()>videoHeight+$videoWrap.offset().top?($videoWrap.height(videoHeight),$video.addClass("stuck")):($videoWrap.height("auto"),$video.removeClass("stuck"))});
